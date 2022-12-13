@@ -1,7 +1,62 @@
+/* CSS for Stopwatch-webapp with Mobile responsive Interface 
+version : 1.0
+Author : TechTronixx */
 
 /* Use poppins font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
+  /* Make the container responsive to different devices */
+
+  @media(max-width: 1024px) { 
+    .container {
+      position: bottom;
+      bottom: 60px;
+      max-width: 500px;
+    }
+    .desc-container {
+      position: bottom;
+      bottom: 60px;
+      max-width: 600px;
+    }
+  }
+  
+  @media(max-width: 600px) { 
+    .container {
+      position: bottom;
+      bottom: 60px;
+      max-width: 300px;
+    }
+    .desc-container {
+      position: bottom;
+      bottom: 60px;
+      max-width: 400px;
+    }
+  }
+  
+  @media(max-width: 400px) { 
+    .container {
+        position: bottom;
+        bottom: 60px;
+        max-width: 250px;
+    }
+    .desc-container {
+      position: bottom;
+      bottom: 60px;
+      max-width: 300px;
+    }
+  }
+  
+  /* Spinning animation github icon */
+  footer img {
+    animation: spin 10s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +71,18 @@
     align-items: center;
     justify-content: center;
   }
+  .container {
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    /* Use relative units for width */
+    width: 80%;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid rgb(20, 141, 222);
+    border-radius: 15px;
+  }
 
   .container {
     padding: 1rem;
@@ -27,7 +94,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     border: 3px solid rgb(20, 141, 222);
     border-radius: 15px;
-  }
+  } 
 
   .time {
     padding: 1rem 0;
@@ -52,20 +119,19 @@
   }
 
   /* CSS for the footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    background-color: #3f51b5;
-  /* existing styles for the footer */
-    transition: all 0.3s ease-in-out;
-  }
+  footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3f51b5;
+      transition: all 0.3s ease-in-out;
+    }
   
   footer img {
     margin-left: 5px;
@@ -89,5 +155,4 @@ footer {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.6);
   }
-
   
