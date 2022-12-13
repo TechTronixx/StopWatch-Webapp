@@ -10,7 +10,7 @@ A digital timer Stopwatch that measures elapsed time and is controlled with butt
 - Display elapsed time in minutes, seconds & milliseconds
 
 ## Demo
-Demo - [Link](https://stopwatch-web.vercel.app/)
+Demo - [Link](https://stopwatch-webapp.vercel.app/)
 
 ## Usage
 
