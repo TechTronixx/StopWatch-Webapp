@@ -16,6 +16,7 @@ Author : TechTronixx */
   .desc-container {
     position: bottom;
     bottom: 60px;
+    right: 30px;
     max-width: 600px;
   }
 }
@@ -29,6 +30,7 @@ Author : TechTronixx */
   .desc-container {
     position: bottom;
     bottom: 60px;
+    right: 30px;
     max-width: 400px;
   }
 }
@@ -42,6 +44,7 @@ Author : TechTronixx */
   .desc-container {
     position: bottom;
     bottom: 60px;
+    right: 30px;
     max-width: 300px;
   }
 }
@@ -67,24 +70,13 @@ footer img {
 body {
   width: 100%;
   height: 100vh;
+  /* background-color: #fffffe; */
   background-image: url("https://wallpaperaccess.com/full/514278.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container {
-  padding: 0.5rem;
-  font-family: "Poppins", sans-serif;
-  /* Use relative units for width */
-  width: 80%;
-  text-align: center;
-  position: relative;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 3px solid rgb(20, 141, 222);
-  border-radius: 15px;
 }
 
 .container {
@@ -97,6 +89,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid rgb(20, 141, 222);
   border-radius: 15px;
+  box-shadow: 15px -8px 32px -3px rgba(0, 0, 0, 0.1);
 }
 
 .time {
@@ -156,4 +149,5 @@ footer:hover {
   border: 3px solid rgb(20, 141, 222);
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 15px -8px 32px -3px rgba(0, 0, 0, 0.1);
 }
